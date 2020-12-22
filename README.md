@@ -1,4 +1,7 @@
 # Leistungsbeurteilung 03 (LB03)
+
+Die nachfolgende Dokumentation basiert auf einer Projektarbeit für das Modul 242 an der Technischen Berufsschule Zürich, von Yves Wetter, Ricardo Bras und Davide Logiurato.
+
 ## 1. Beschreibung
 In diesem Projekt verarbeiten wir die gleichen Daten, wie bei der LB02. Wir verfolgen den gleichen Ansatz, verwendeten aber einen Gateway und das MQTT Protokoll. Als Datenspeicher haben wir wieder die InfluxDB genommen. Damit dies aber funktioniert, mussten wir einen MQTT Broker benutzen. Dazu verwendeten wir Telegraf, welcher die Daten dann in die Datenbank schreibt. Das Grafana kann nachher die Daten grafisch von der Datenbank anzeigen.
 
