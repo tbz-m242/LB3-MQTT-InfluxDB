@@ -150,19 +150,17 @@ Die Daten werden abgespeichert, so wie es InfluxDB empfiehlt. Das heisst pro Mes
 
 ### 4.9 Kompilieren
 *Achtung bei jeder neuen Installation mit Vagrant muss das WLAN und die MQTT-Broker Server Adresse angepasst werden*
-| Umgebung/Board    | Link/Befehl                                                                                                                |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Online Compiler   | [LB03-MultiTemp](https://os.mbed.com/compiler/)                                                                            |
-| CLI (IoTKit K64F) | In den Source Ordner wechseln "cd source" und dort den Befehl "mbed compile" eingeben, damit das Programm kompiliert wird. |
+
+Im [Online Compiler](https://os.mbed.com/compiler/) .                                                                    
 
 ## 5. Installation
 Für die Installation müssen folgende Schritte gemacht werden:
-1. git klonen (git clone https://github.com/Wind-net/M242-IOT)
-2. cd lb03
+1. git klonen (git clone https://github.com/tbz-m242/LB3-MQTT-InfluxDB.git)
+2. cd LB3-MQTT-InfluxDB
 3. vagrant up
-4. Im ./source kann man das main.cpp finden. Dort muss der Hostname des MQTT-Broker angegeben werden.
+4. Im ./src kann man das main.cpp finden. Dort muss der Hostname des MQTT-Broker angegeben werden.
 5. Danach muss noch die WLAN konfigurationen angepasst werden.
-6. Zum Schluss kann man mit dem Mbed-CLI der Ordner ./source kompilieren.
+6. Zum Schluss kann man mit dem Mbed-CLI der Ordner ./src kompilieren.
 7. .bin Datei auf den IoTKitv3 laden.
 
 ## 6. Testprotokoll
