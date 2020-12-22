@@ -6,7 +6,10 @@ Die nachfolgende Dokumentation basiert auf einer Projektarbeit für das Modul 24
 In diesem Projekt verarbeiten wir die gleichen Daten, wie bei der LB02. Wir verfolgen den gleichen Ansatz, verwendeten aber einen Gateway und das MQTT Protokoll. Als Datenspeicher haben wir wieder die InfluxDB genommen. Damit dies aber funktioniert, mussten wir einen MQTT Broker benutzen. Dazu verwendeten wir Telegraf, welcher die Daten dann in die Datenbank schreibt. Das Grafana kann nachher die Daten grafisch von der Datenbank anzeigen.
 
 ## 2. Übersicht
+
 ![Network Diagramm](images/NetworkDiagramm.png)
+
+- - -
 
 ## 3. Externer Sensor
 Der Externe Sensor muss auf dem Board am UART-Bus an A5 angeschlossen werden.
@@ -21,6 +24,10 @@ Message Queuing Telemetry Transport oder auch MQTT abgekürzt ist ein offenes Ne
 MQTT erfolgt über eine Publish-Subscribe-Kommunikation. Es gibt immer zwei verschiedene Teilnehmer: Einen Boker (ist meistens ein Server) und x viele Clients. Die Clients als Publisher und Subscriber kommunizieren nicht direkt miteinander, sondern nur die Nachrichten "publishen" und "subscriben". In diesem ganzen Zusammenhang ist die Aufgabe des Brokers die Nachrichtenverwaltung und -verteilung.
 
 ![MQTT Kommunikationsparadigma](images/MQTT_Kommunikationsparadigma.jpg)
+
+Quelle: Publish/Subscribe-Architektur von MQTT. © HiveMQ.com
+
+- - -
 
 Diese Kommunikation hat folgende drei Vorteile:
 
